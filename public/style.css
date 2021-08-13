@@ -1,17 +1,32 @@
 /****** Main Styling ******/
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Sora', 'Poppins', 'Helvetica', sans-serif;
 	font-size: 16px;
-	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
 	line-height: 1.4em;
+	text-align: center;
+	color: #222;
+  background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
 }
 
 .container {
-	padding: 0;
+	padding: 20px;
 	margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+}
+
+h1 {
+  color: white;
 }
 
 h3 {
@@ -20,6 +35,8 @@ h3 {
 
 hr {
 	margin: 25px;
+  border: 0;
+  border-top: 1px solid #222;
 }
 
 .footer {
@@ -27,10 +44,12 @@ hr {
 }
 
 code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
+  font-family: 'Fira Code', monospace;
+  line-height: 2rem;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 ul {
